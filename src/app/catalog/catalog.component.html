@@ -1,0 +1,25 @@
+<div class="product-container">
+  <div class="side" style="position: relative">
+    <!-- <div style="height: 140px; width: 28%; display: flex; overflow-x: auto; margin-top: 10px;">
+      <img *ngFor="let image of currentCatalogItem?.images; let idx = index" [src]="image" style="height: 110px; margin: 5px;"
+        (click)="onClickBottomImage(idx)" />
+    </div> -->
+    <div style="height: 140px; width: 100%; position: absolute; bottom: 0px; align-items: center; display: flex; overflow-x: auto; white-space:nowrap;">
+      <div class="product-full-image" *ngFor="let image of currentCatalogItem?.images; let idx = index">
+        <img [src]="image" style="height: 110px; margin: 5px;" (click)="onClickBottomImage(image)"/>
+      </div>
+    </div>
+  </div>
+  <div class="product-carousel">
+    <div class="product-full-image">
+      <div class="product-full-image">
+        <img [src]="currentProduct?.image" style="height: calc(100vh - 100px);" alt="Random first slide" />
+      </div>
+    </div>
+    <!-- <ngb-carousel *ngIf="currentCatalogItem?.images" #carousel [interval]="false" [showNavigationIndicators]="false">
+      <ng-template ngbSlide *ngFor="let image of currentCatalogItem?.images" active>
+        
+      </ng-template>
+    </ngb-carousel> -->
+  </div>
+</div>

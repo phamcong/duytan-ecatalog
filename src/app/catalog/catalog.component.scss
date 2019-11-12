@@ -1,0 +1,45 @@
+.carousel-caption {
+  position: unset;
+}
+
+.product-container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex: 25%;
+  height: calc(100vh - 76px);
+  flex-direction: column;
+}
+
+.product-carousel {
+  flex: 60%;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 76px);
+  flex-direction: column;
+}
+
+.product-full-image {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background: rgb(111,111,111);
+}
