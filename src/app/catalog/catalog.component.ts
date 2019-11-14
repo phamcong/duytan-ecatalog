@@ -3,6 +3,7 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute, ParamMap, UrlSegment } from '@angular/router';
 import { catalogItems, saveText } from './catalog.utils';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
+import { AngularEditorConfig } from '@kolkov/angular-editor';
 
 @Component({
   selector: 'app-catalog',
@@ -12,20 +13,61 @@ import { IDropdownSettings } from 'ng-multiselect-dropdown';
 export class CatalogComponent implements OnInit {
   // tslint:disable-next-line: max-line-length
 
-  catalogItems: any[];
-  currentCatalogItem: any;
-  currentProduct: any;
+  catalogItems: any[] = [];
+  currentCatalogItem: any = {};
+  currentProduct: any = {};
   dropdownList: any[] = [];
   displayedCols: { name: string, label: string }[] = [];
   dropdownSettings: IDropdownSettings = {};
   descriptionFieldList: { name: string, label: string }[] = []
   checked = false
+  editorConfig: AngularEditorConfig
+  selectedDescription: any
 
   @ViewChild('carousel', { static: false }) carousel: NgbCarousel;
 
   constructor(private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {    
+  ngOnInit() {
+    this.editorConfig = {
+      editable: true,
+      spellcheck: true,
+      height: '200px',
+      minHeight: '0',
+      maxHeight: 'auto',
+      width: 'auto',
+      minWidth: '0',
+      translate: 'yes',
+      enableToolbar: true,
+      showToolbar: true,
+      placeholder: 'Enter text here...',
+      defaultParagraphSeparator: '',
+      defaultFontName: '',
+      defaultFontSize: '',
+      fonts: [
+        { class: 'arial', name: 'Arial' },
+        { class: 'times-new-roman', name: 'Times New Roman' },
+        { class: 'calibri', name: 'Calibri' },
+        { class: 'comic-sans-ms', name: 'Comic Sans MS' }
+      ],
+      customClasses: [
+        {
+          name: 'quote',
+          class: 'quote',
+        },
+        {
+          name: 'redText',
+          class: 'redText'
+        },
+        {
+          name: 'titleText',
+          class: 'titleText',
+          tag: 'h1',
+        },
+      ],
+      toolbarPosition: 'top',
+    };
+
     this.catalogItems = catalogItems;
     this.catalogItems.map(item => {
       item.products = item.images.map((img: any) => <any>{
@@ -39,9 +81,9 @@ export class CatalogComponent implements OnInit {
         ], descriptions: [
           { code: 'No 120', label: 'Product No 120', size: '10x20x30 cm', color: 'Yellow', volume: '1000ml' },
           { code: 'No 120', label: 'Product No 120', size: '10x20x30 cm', color: 'Yellow', volume: '1000ml' },
-          { code: 'No 120', label: 'Product No 120', size: '10x20x30 cm', color: 'Yellow', volume: '1000ml' },
           { code: 'No 120', label: 'Product No 120', size: '10x20x30 cm', color: 'Yellow', volume: '1000ml' }
-        ]
+        ],
+        richTextDescription: ''
       })
     })
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
@@ -49,7 +91,7 @@ export class CatalogComponent implements OnInit {
       this.currentCatalogItem = this.catalogItems.find(
         item => item.name === catalogName
       );
-      this.currentProduct = this.currentCatalogItem.products[0]
+      if (this.currentCatalogItem) this.currentProduct = this.currentCatalogItem.products[0]
     });
     this.descriptionFieldList = [
       { name: 'code', label: 'Code' },
@@ -89,7 +131,13 @@ export class CatalogComponent implements OnInit {
   addDescription = () => {
     const newDescription = {}
     this.currentProduct.descriptionFieldList.map((field: any) => { newDescription[field.name] = undefined })
-    this.currentProduct.descriptions.push(newDescription)
+    this.currentProduct.descriptions.push(Object.assign({}, this.currentProduct.descriptions[this.currentProduct.descriptions.length - 1]))
+  }
+
+  removeDescription = () => {
+    if (!this.selectedDescription) { alert('Please select a row to delete'); return }
+    this.currentProduct.descriptions = this.currentProduct.descriptions.filter((des: any) => des !== this.selectedDescription)
+    this.selectedDescription = undefined
   }
 
   onChangeColLabel = (col: { name: string, label: string }) => {
@@ -110,6 +158,24 @@ export class CatalogComponent implements OnInit {
     // this.carousel.select(id);
     // console.log(idx);
   };
+
+  onFileChanged = (event: any) => {
+    const selectedFile = event.target.files[0];
+    const fileReader = new FileReader();
+    fileReader.readAsText(selectedFile, "UTF-8");
+    fileReader.onload = () => {
+      this.catalogItems = JSON.parse(fileReader.result as string);
+      if (this.currentProduct) {
+        this.catalogItems.map(catItem => {
+          const foundProduct = catItem.products.find((item: any) => item.image === this.currentProduct.image)
+          if (foundProduct) this.currentProduct = foundProduct
+        })
+      }
+    }
+    fileReader.onerror = (error) => {
+      console.log(error);
+    }
+  }
 
   saveDataToFile = () => {
     saveText(JSON.stringify(this.catalogItems), 'catalogData.json')

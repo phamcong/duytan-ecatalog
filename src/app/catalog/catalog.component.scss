@@ -34,10 +34,17 @@
 .product-description {
   display: inline-block;
   position: absolute;
+  height: calc(100vh - 246px);
+  overflow-y: auto;
   bottom: 160px;
   width: 100%;
   padding: 5px;  
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.margin--xs--vertical {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .product-full-image {
@@ -48,8 +55,12 @@
   text-align: right;
 }
 
+.bg--primary {
+  background-color: cornflowerblue;
+}
+
 .action-menu button {
-  margin: 5px 5px 0px 0px;
+  margin: 5px 5px 5px 0px;
 }
 
 ::-webkit-scrollbar {

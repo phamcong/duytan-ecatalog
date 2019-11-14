@@ -7,6 +7,7 @@ import { SharedModule } from '@app/shared';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
   declarations: [CatalogComponent],
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     NgbCarouselModule,
     CatalogRoutingModule,
+    AngularEditorModule,
     NgMultiSelectDropDownModule.forRoot()
   ]
 })
