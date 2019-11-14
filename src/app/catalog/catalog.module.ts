@@ -5,7 +5,6 @@ import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
 import { SharedModule } from '@app/shared';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 
@@ -16,8 +15,7 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
     FormsModule,
     NgbCarouselModule,
     CatalogRoutingModule,
-    AngularEditorModule,
-    NgMultiSelectDropDownModule.forRoot()
+    AngularEditorModule
   ]
 })
-export class CatalogModule { }
+export class CatalogModule {}
