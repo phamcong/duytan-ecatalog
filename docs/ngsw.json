@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573696136884,
+  "timestamp": 1573777349358,
   "index": "/duytan-ecatalog/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/duytan-ecatalog/favicon.ico",
         "/duytan-ecatalog/index.html",
-        "/duytan-ecatalog/main-es2015.b2b3e757bf8e8a4ade93.js",
-        "/duytan-ecatalog/main-es5.bdc3cd6e1a78e0c77ac5.js",
+        "/duytan-ecatalog/main-es2015.3a754bbd01c4c0fc4a20.js",
+        "/duytan-ecatalog/main-es5.6cb0a39eedb75d345e08.js",
         "/duytan-ecatalog/manifest.json",
         "/duytan-ecatalog/polyfills-es2015.6da7d0b5584f97854830.js",
         "/duytan-ecatalog/polyfills-es5.df280fb5bab8cc86fc07.js",
@@ -737,9 +737,9 @@
     "/duytan-ecatalog/fa-solid-900.44d537ab79f921fde5a2.woff2": "b2879f9e1d0985a96842bf7f55a2b2cc4c636d04",
     "/duytan-ecatalog/fa-solid-900.8e4a6dcc692b3887f9f5.eot": "340ee70e87850176047733192ea8109dd6380082",
     "/duytan-ecatalog/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/duytan-ecatalog/index.html": "de8697b305688b450336b949c8657ace69ccbeee",
-    "/duytan-ecatalog/main-es2015.b2b3e757bf8e8a4ade93.js": "8dfd58650982b6fa57f2072109ec9e37f10f9427",
-    "/duytan-ecatalog/main-es5.bdc3cd6e1a78e0c77ac5.js": "9b6702081591a552d3392d0bef202618b45f506a",
+    "/duytan-ecatalog/index.html": "abf027574e657cae41829f6dced9949cc3936571",
+    "/duytan-ecatalog/main-es2015.3a754bbd01c4c0fc4a20.js": "d2394aedea89cd6a8328c0f2f9a8340d56dabb2a",
+    "/duytan-ecatalog/main-es5.6cb0a39eedb75d345e08.js": "83e39cc099d1969cc72053fe28665491300e0995",
     "/duytan-ecatalog/manifest.json": "f54ed5c1c5dcee2cedff4fbd6675f7b94922623d",
     "/duytan-ecatalog/polyfills-es2015.6da7d0b5584f97854830.js": "ffe5f8cfa6eae51a7a95e8363b303b0c44ade852",
     "/duytan-ecatalog/polyfills-es5.df280fb5bab8cc86fc07.js": "3ea1e29746459f5b3ea1cf720189326d06127910",

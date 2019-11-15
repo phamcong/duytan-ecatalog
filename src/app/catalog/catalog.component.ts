@@ -21,6 +21,7 @@ export class CatalogComponent implements OnInit {
   checked = false;
   editorConfig: AngularEditorConfig;
   selectedDescription: any;
+  onEditting = true;
 
   @ViewChild('carousel', { static: false }) carousel: NgbCarousel;
 

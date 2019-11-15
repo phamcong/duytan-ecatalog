@@ -32775,6 +32775,7 @@
             (this.displayedCols = []),
             (this.descriptionFieldList = []),
             (this.checked = !1),
+            (this.onEditting = !0),
             (this.addDescriptionField = function() {
               e.currentProduct.descriptionFieldList.push({
                 name: 'label' + e.currentProduct.descriptionFieldList.length,
@@ -57231,7 +57232,7 @@
     oQ15: function(t, e, n) {
       'use strict';
       e.styles = [
-        '.carousel-caption[_ngcontent-%COMP%]{position:unset}.product-container[_ngcontent-%COMP%]{display:-webkit-box;display:flex;flex-wrap:wrap}.side[_ngcontent-%COMP%]{border-radius:5px;margin-left:50px;margin-top:10px;margin-bottom:10px;display:-webkit-box;display:flex;-webkit-box-flex:25%;flex:25%;height:calc(100vh - 76px);-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.product-carousel[_ngcontent-%COMP%]{-webkit-box-flex:60%;flex:60%;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;height:calc(100vh - 76px);-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin:10px 50px 10px 10px}.product-description[_ngcontent-%COMP%]{display:inline-block;position:absolute;height:calc(100vh - 246px);overflow-y:auto;bottom:160px;width:100%;padding:5px;box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important}.margin--xs--vertical[_ngcontent-%COMP%]{margin-top:5px;margin-bottom:5px}.product-full-image[_ngcontent-%COMP%]{box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important}.action-menu[_ngcontent-%COMP%]{text-align:right}.bg--primary[_ngcontent-%COMP%]{background-color:#6495ed}.action-menu[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:5px 5px 5px 0}[_ngcontent-%COMP%]::-webkit-scrollbar{width:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{width:10px;background:#6f6f6f}'
+        '.carousel-caption[_ngcontent-%COMP%]{position:unset}.product-container[_ngcontent-%COMP%]{display:-webkit-box;display:flex;flex-wrap:wrap}.side[_ngcontent-%COMP%]{border-radius:5px;margin-left:50px;margin-top:10px;margin-bottom:10px;display:-webkit-box;display:flex;-webkit-box-flex:25%;flex:25%;height:calc(100vh - 76px);-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.product-carousel[_ngcontent-%COMP%]{-webkit-box-flex:60%;flex:60%;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;height:calc(100vh - 76px);-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin:10px 50px 10px 10px}.product-description[_ngcontent-%COMP%]{display:inline-block;position:absolute;max-height:calc(100vh - 246px);overflow-y:auto;bottom:160px;width:100%;padding:5px;box-shadow:0 2px 4px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important}.margin--xs--vertical[_ngcontent-%COMP%]{margin-top:5px;margin-bottom:5px}.product-full-image[_ngcontent-%COMP%]{box-shadow:0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important}.product-full-image[_ngcontent-%COMP%]:hover{-webkit-transform:scale(1.2);transform:scale(1.2)}.action-menu[_ngcontent-%COMP%]{text-align:right}.bg--primary[_ngcontent-%COMP%]{background-color:#6495ed}.action-menu[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:5px 5px 5px 0}[_ngcontent-%COMP%]::-webkit-scrollbar{width:10px}[_ngcontent-%COMP%]::-webkit-scrollbar-thumb{width:10px;background:#6f6f6f}'
       ];
     },
     p0Sj: function(t, e, n) {
@@ -63646,7 +63647,7 @@
               null,
               null
             )),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
             (t()(),
             o.ɵeld(
               2,
@@ -63732,7 +63733,7 @@
               null,
               null
             ),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
             (t()(),
             o.ɵeld(
               9,
@@ -63752,7 +63753,7 @@
               null
             )),
             (t()(), o.ɵted(10, null, ['', ''])),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
             (t()(),
             o.ɵeld(
               12,
@@ -63783,7 +63784,7 @@
               null,
               null
             )),
-            (t()(), o.ɵted(-1, null, ['\n        ']))
+            (t()(), o.ɵted(-1, null, ['\n          ']))
           ],
           function(t, e) {
             t(e, 5, 0, e.context.$implicit.displayed);
@@ -63824,7 +63825,7 @@
               null,
               null
             )),
-            (t()(), o.ɵted(-1, null, ['\n                '])),
+            (t()(), o.ɵted(-1, null, ['\n                  '])),
             (t()(),
             o.ɵeld(
               2,
@@ -63920,7 +63921,7 @@
               null,
               null
             ),
-            (t()(), o.ɵted(-1, null, ['\n              ']))
+            (t()(), o.ɵted(-1, null, ['\n                ']))
           ],
           function(t, e) {
             t(e, 5, 0, e.context.$implicit.label);
@@ -63971,7 +63972,7 @@
               null,
               null
             )),
-            (t()(), o.ɵted(-1, null, ['\n                '])),
+            (t()(), o.ɵted(-1, null, ['\n                  '])),
             (t()(),
             o.ɵeld(
               2,
@@ -64068,7 +64069,7 @@
               null,
               null
             ),
-            (t()(), o.ɵted(-1, null, ['\n              ']))
+            (t()(), o.ɵted(-1, null, ['\n                ']))
           ],
           function(t, e) {
             t(e, 5, 0, e.parent.context.$implicit[e.context.$implicit.name]);
@@ -64109,7 +64110,7 @@
               null,
               null
             )),
-            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(), o.ɵted(-1, null, ['\n                '])),
             (t()(), o.ɵand(16777216, null, null, 1, null, g)),
             o.ɵdid(
               3,
@@ -64121,7 +64122,7 @@
               { ngForOf: [0, 'ngForOf'] },
               null
             ),
-            (t()(), o.ɵted(-1, null, ['\n            ']))
+            (t()(), o.ɵted(-1, null, ['\n              ']))
           ],
           function(t, e) {
             var n = e.component;
@@ -64138,6 +64139,728 @@
         );
       }
       function b(t) {
+        return o.ɵvid(
+          0,
+          [
+            (t()(),
+            o.ɵeld(
+              0,
+              0,
+              null,
+              null,
+              52,
+              'div',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(),
+            o.ɵeld(
+              2,
+              0,
+              null,
+              null,
+              5,
+              'angular-editor',
+              [],
+              [
+                [1, 'tabindex', 0],
+                [2, 'ng-untouched', null],
+                [2, 'ng-touched', null],
+                [2, 'ng-pristine', null],
+                [2, 'ng-dirty', null],
+                [2, 'ng-valid', null],
+                [2, 'ng-invalid', null],
+                [2, 'ng-pending', null]
+              ],
+              [
+                [null, 'ngModelChange'],
+                [null, 'focus']
+              ],
+              function(t, e, n) {
+                var r = !0,
+                  i = t.component;
+                return (
+                  'focus' === e && (r = !1 !== o.ɵnov(t, 3).onFocus() && r),
+                  'ngModelChange' === e &&
+                    (r =
+                      !1 !== (i.currentProduct.richTextDescription = n) && r),
+                  r
+                );
+              },
+              u.View_AngularEditorComponent_0,
+              u.RenderType_AngularEditorComponent
+            )),
+            o.ɵdid(
+              3,
+              4440064,
+              null,
+              0,
+              l.AngularEditorComponent,
+              [
+                o.Renderer2,
+                l.AngularEditorService,
+                a.DOCUMENT,
+                s.DomSanitizer,
+                o.ChangeDetectorRef,
+                [8, null],
+                [8, null]
+              ],
+              { config: [0, 'config'], placeholder: [1, 'placeholder'] },
+              { focusEvent: 'focus' }
+            ),
+            o.ɵprd(
+              1024,
+              null,
+              i.NG_VALUE_ACCESSOR,
+              function(t) {
+                return [t];
+              },
+              [l.AngularEditorComponent]
+            ),
+            o.ɵdid(
+              5,
+              671744,
+              null,
+              0,
+              i.NgModel,
+              [
+                [8, null],
+                [8, null],
+                [8, null],
+                [6, i.NG_VALUE_ACCESSOR]
+              ],
+              { model: [0, 'model'] },
+              { update: 'ngModelChange' }
+            ),
+            o.ɵprd(2048, null, i.NgControl, null, [i.NgModel]),
+            o.ɵdid(
+              7,
+              16384,
+              null,
+              0,
+              i.NgControlStatus,
+              [[4, i.NgControl]],
+              null,
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(),
+            o.ɵeld(
+              9,
+              0,
+              null,
+              null,
+              21,
+              'div',
+              [['class', 'action-menu']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, p)),
+            o.ɵdid(
+              12,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(),
+            o.ɵeld(
+              14,
+              0,
+              null,
+              null,
+              0,
+              'br',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n\n          '])),
+            (t()(),
+            o.ɵeld(
+              16,
+              0,
+              null,
+              null,
+              3,
+              'button',
+              [
+                ['class', 'btn btn-primary btn-sm'],
+                ['type', 'button']
+              ],
+              null,
+              [[null, 'click']],
+              function(t, e, n) {
+                var r = !0;
+                return (
+                  'click' === e &&
+                    (r = !1 !== t.component.addDescriptionField() && r),
+                  r
+                );
+              },
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              18,
+              0,
+              null,
+              null,
+              0,
+              'i',
+              [['class', 'fa fa-plus']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, [' Column\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(),
+            o.ɵeld(
+              21,
+              0,
+              null,
+              null,
+              3,
+              'button',
+              [
+                ['class', 'btn btn-primary btn-sm'],
+                ['type', 'button']
+              ],
+              null,
+              [[null, 'click']],
+              function(t, e, n) {
+                var r = !0;
+                return (
+                  'click' === e &&
+                    (r = !1 !== t.component.addDescription() && r),
+                  r
+                );
+              },
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              23,
+              0,
+              null,
+              null,
+              0,
+              'i',
+              [['class', 'fa fa-plus']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, [' Row\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(),
+            o.ɵeld(
+              26,
+              0,
+              null,
+              null,
+              3,
+              'button',
+              [
+                ['class', 'btn btn-primary btn-sm'],
+                ['type', 'button']
+              ],
+              null,
+              [[null, 'click']],
+              function(t, e, n) {
+                var r = !0;
+                return (
+                  'click' === e &&
+                    (r = !1 !== t.component.removeDescription() && r),
+                  r
+                );
+              },
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              28,
+              0,
+              null,
+              null,
+              0,
+              'i',
+              [['class', 'fa fa-minus']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, [' Row\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(),
+            o.ɵeld(
+              32,
+              0,
+              null,
+              null,
+              19,
+              'div',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(),
+            o.ɵeld(
+              34,
+              0,
+              null,
+              null,
+              16,
+              'table',
+              [['class', 'table table-borderless table-hover']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              36,
+              0,
+              null,
+              null,
+              7,
+              'thead',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(),
+            o.ɵeld(
+              38,
+              0,
+              null,
+              null,
+              4,
+              'tr',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n                '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, h)),
+            o.ɵdid(
+              41,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              45,
+              0,
+              null,
+              null,
+              4,
+              'tbody',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, m)),
+            o.ɵdid(
+              48,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(), o.ɵted(-1, null, ['\n      ']))
+          ],
+          function(t, e) {
+            var n = e.component;
+            t(e, 3, 0, n.editorConfig, 'Enter text here...'),
+              t(e, 5, 0, n.currentProduct.richTextDescription),
+              t(
+                e,
+                12,
+                0,
+                null == n.currentProduct
+                  ? null
+                  : n.currentProduct.descriptionFieldList
+              ),
+              t(
+                e,
+                41,
+                0,
+                null == n.currentProduct
+                  ? null
+                  : n.currentProduct.descriptionFieldList
+              ),
+              t(
+                e,
+                48,
+                0,
+                null == n.currentProduct ? null : n.currentProduct.descriptions
+              );
+          },
+          function(t, e) {
+            t(
+              e,
+              2,
+              0,
+              o.ɵnov(e, 3).tabindex,
+              o.ɵnov(e, 7).ngClassUntouched,
+              o.ɵnov(e, 7).ngClassTouched,
+              o.ɵnov(e, 7).ngClassPristine,
+              o.ɵnov(e, 7).ngClassDirty,
+              o.ɵnov(e, 7).ngClassValid,
+              o.ɵnov(e, 7).ngClassInvalid,
+              o.ɵnov(e, 7).ngClassPending
+            );
+          }
+        );
+      }
+      function v(t) {
+        return o.ɵvid(
+          0,
+          [
+            (t()(),
+            o.ɵeld(
+              0,
+              0,
+              null,
+              null,
+              1,
+              'th',
+              [['scope', 'col']],
+              [[8, 'hidden', 0]],
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(),
+            o.ɵted(1, null, ['\n                  ', '\n                ']))
+          ],
+          null,
+          function(t, e) {
+            t(e, 0, 0, !e.context.$implicit.displayed),
+              t(e, 1, 0, e.context.$implicit.label);
+          }
+        );
+      }
+      function y(t) {
+        return o.ɵvid(
+          0,
+          [
+            (t()(),
+            o.ɵeld(
+              0,
+              0,
+              null,
+              null,
+              1,
+              'td',
+              [['scope', 'col']],
+              [[8, 'hidden', 0]],
+              [[null, 'click']],
+              function(t, e, n) {
+                var r = !0;
+                return (
+                  'click' === e &&
+                    (r =
+                      !1 !==
+                        (t.component.selectedDescription =
+                          t.parent.context.$implicit) && r),
+                  r
+                );
+              },
+              null,
+              null
+            )),
+            (t()(),
+            o.ɵted(1, null, ['\n                  ', '\n                ']))
+          ],
+          null,
+          function(t, e) {
+            t(e, 0, 0, !e.context.$implicit.displayed),
+              t(e, 1, 0, e.parent.context.$implicit[e.context.$implicit.name]);
+          }
+        );
+      }
+      function _(t) {
+        return o.ɵvid(
+          0,
+          [
+            (t()(),
+            o.ɵeld(
+              0,
+              0,
+              null,
+              null,
+              4,
+              'tr',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n                '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, y)),
+            o.ɵdid(
+              3,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n              ']))
+          ],
+          function(t, e) {
+            var n = e.component;
+            t(
+              e,
+              3,
+              0,
+              null == n.currentProduct
+                ? null
+                : n.currentProduct.descriptionFieldList
+            );
+          },
+          null
+        );
+      }
+      function C(t) {
+        return o.ɵvid(
+          0,
+          [
+            (t()(),
+            o.ɵeld(
+              0,
+              0,
+              null,
+              null,
+              24,
+              'div',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(),
+            o.ɵeld(
+              2,
+              0,
+              null,
+              null,
+              0,
+              'div',
+              [],
+              [[8, 'innerHTML', 1]],
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(),
+            o.ɵeld(
+              4,
+              0,
+              null,
+              null,
+              19,
+              'div',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(),
+            o.ɵeld(
+              6,
+              0,
+              null,
+              null,
+              16,
+              'table',
+              [['class', 'table table-borderless table-hover']],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              8,
+              0,
+              null,
+              null,
+              7,
+              'thead',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(),
+            o.ɵeld(
+              10,
+              0,
+              null,
+              null,
+              4,
+              'tr',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n                '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, v)),
+            o.ɵdid(
+              13,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(),
+            o.ɵeld(
+              17,
+              0,
+              null,
+              null,
+              4,
+              'tbody',
+              [],
+              null,
+              null,
+              null,
+              null,
+              null
+            )),
+            (t()(), o.ɵted(-1, null, ['\n              '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, _)),
+            o.ɵdid(
+              20,
+              278528,
+              null,
+              0,
+              a.NgForOf,
+              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
+              { ngForOf: [0, 'ngForOf'] },
+              null
+            ),
+            (t()(), o.ɵted(-1, null, ['\n            '])),
+            (t()(), o.ɵted(-1, null, ['\n          '])),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
+            (t()(), o.ɵted(-1, null, ['\n      ']))
+          ],
+          function(t, e) {
+            var n = e.component;
+            t(
+              e,
+              13,
+              0,
+              null == n.currentProduct
+                ? null
+                : n.currentProduct.descriptionFieldList
+            ),
+              t(
+                e,
+                20,
+                0,
+                null == n.currentProduct ? null : n.currentProduct.descriptions
+              );
+          },
+          function(t, e) {
+            t(e, 2, 0, e.component.currentProduct.richTextDescription);
+          }
+        );
+      }
+      function O(t) {
         return o.ɵvid(
           0,
           [
@@ -64189,7 +64912,7 @@
           }
         );
       }
-      function v(t) {
+      function w(t) {
         return o.ɵvid(
           0,
           [
@@ -64200,7 +64923,7 @@
               0,
               null,
               null,
-              91,
+              49,
               'div',
               [['class', 'product-container']],
               null,
@@ -64216,7 +64939,7 @@
               0,
               null,
               null,
-              76,
+              34,
               'div',
               [
                 ['class', 'side'],
@@ -64235,7 +64958,7 @@
               0,
               null,
               null,
-              67,
+              25,
               'div',
               [['class', 'product-description']],
               null,
@@ -64251,7 +64974,7 @@
               0,
               null,
               null,
-              13,
+              16,
               'div',
               [['class', 'action-menu']],
               null,
@@ -64370,386 +65093,64 @@
               null
             )),
             (t()(), o.ɵted(-1, null, [' Save file\n        '])),
-            (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(), o.ɵted(-1, null, ['\n      '])),
+            (t()(), o.ɵted(-1, null, ['\n        '])),
             (t()(),
             o.ɵeld(
-              22,
+              21,
               0,
               null,
               null,
-              5,
-              'angular-editor',
-              [],
+              1,
+              'button',
               [
-                [1, 'tabindex', 0],
-                [2, 'ng-untouched', null],
-                [2, 'ng-touched', null],
-                [2, 'ng-pristine', null],
-                [2, 'ng-dirty', null],
-                [2, 'ng-valid', null],
-                [2, 'ng-invalid', null],
-                [2, 'ng-pending', null]
+                ['class', 'btn btn-primary btn-sm margin--xs--vertical'],
+                ['type', 'button']
               ],
-              [
-                [null, 'ngModelChange'],
-                [null, 'focus']
-              ],
+              null,
+              [[null, 'click']],
               function(t, e, n) {
                 var r = !0,
-                  i = t.component;
+                  o = t.component;
                 return (
-                  'focus' === e && (r = !1 !== o.ɵnov(t, 23).onFocus() && r),
-                  'ngModelChange' === e &&
-                    (r =
-                      !1 !== (i.currentProduct.richTextDescription = n) && r),
+                  'click' === e &&
+                    (r = 0 != (o.onEditting = !o.onEditting) && r),
                   r
                 );
               },
-              u.View_AngularEditorComponent_0,
-              u.RenderType_AngularEditorComponent
+              null,
+              null
             )),
+            (t()(), o.ɵted(-1, null, ['\n          Switch View\n        '])),
+            (t()(), o.ɵted(-1, null, ['\n      '])),
+            (t()(), o.ɵted(-1, null, ['\n      '])),
+            (t()(), o.ɵand(16777216, null, null, 1, null, b)),
             o.ɵdid(
-              23,
-              4440064,
-              null,
-              0,
-              l.AngularEditorComponent,
-              [
-                o.Renderer2,
-                l.AngularEditorService,
-                a.DOCUMENT,
-                s.DomSanitizer,
-                o.ChangeDetectorRef,
-                [8, null],
-                [8, null]
-              ],
-              { config: [0, 'config'], placeholder: [1, 'placeholder'] },
-              { focusEvent: 'focus' }
-            ),
-            o.ɵprd(
-              1024,
-              null,
-              i.NG_VALUE_ACCESSOR,
-              function(t) {
-                return [t];
-              },
-              [l.AngularEditorComponent]
-            ),
-            o.ɵdid(
-              25,
-              671744,
-              null,
-              0,
-              i.NgModel,
-              [
-                [8, null],
-                [8, null],
-                [8, null],
-                [6, i.NG_VALUE_ACCESSOR]
-              ],
-              { model: [0, 'model'] },
-              { update: 'ngModelChange' }
-            ),
-            o.ɵprd(2048, null, i.NgControl, null, [i.NgModel]),
-            o.ɵdid(
-              27,
+              26,
               16384,
               null,
               0,
-              i.NgControlStatus,
-              [[4, i.NgControl]],
-              null,
+              a.NgIf,
+              [o.ViewContainerRef, o.TemplateRef],
+              { ngIf: [0, 'ngIf'] },
               null
             ),
             (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(),
-            o.ɵeld(
+            (t()(), o.ɵand(16777216, null, null, 1, null, C)),
+            o.ɵdid(
               29,
+              16384,
+              null,
               0,
-              null,
-              null,
-              21,
-              'div',
-              [['class', 'action-menu']],
-              null,
-              null,
-              null,
-              null,
+              a.NgIf,
+              [o.ViewContainerRef, o.TemplateRef],
+              { ngIf: [0, 'ngIf'] },
               null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(), o.ɵand(16777216, null, null, 1, null, p)),
-            o.ɵdid(
+            ),
+            (t()(), o.ɵted(-1, null, ['\n    '])),
+            (t()(), o.ɵted(-1, null, ['\n    '])),
+            (t()(),
+            o.ɵeld(
               32,
-              278528,
-              null,
-              0,
-              a.NgForOf,
-              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
-              { ngForOf: [0, 'ngForOf'] },
-              null
-            ),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(),
-            o.ɵeld(
-              34,
-              0,
-              null,
-              null,
-              0,
-              'br',
-              [],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n\n        '])),
-            (t()(),
-            o.ɵeld(
-              36,
-              0,
-              null,
-              null,
-              3,
-              'button',
-              [
-                ['class', 'btn btn-primary btn-sm'],
-                ['type', 'button']
-              ],
-              null,
-              [[null, 'click']],
-              function(t, e, n) {
-                var r = !0;
-                return (
-                  'click' === e &&
-                    (r = !1 !== t.component.addDescriptionField() && r),
-                  r
-                );
-              },
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(),
-            o.ɵeld(
-              38,
-              0,
-              null,
-              null,
-              0,
-              'i',
-              [['class', 'fa fa-plus']],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, [' Column\n        '])),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(),
-            o.ɵeld(
-              41,
-              0,
-              null,
-              null,
-              3,
-              'button',
-              [
-                ['class', 'btn btn-primary btn-sm'],
-                ['type', 'button']
-              ],
-              null,
-              [[null, 'click']],
-              function(t, e, n) {
-                var r = !0;
-                return (
-                  'click' === e &&
-                    (r = !1 !== t.component.addDescription() && r),
-                  r
-                );
-              },
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(),
-            o.ɵeld(
-              43,
-              0,
-              null,
-              null,
-              0,
-              'i',
-              [['class', 'fa fa-plus']],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, [' Row\n        '])),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(),
-            o.ɵeld(
-              46,
-              0,
-              null,
-              null,
-              3,
-              'button',
-              [
-                ['class', 'btn btn-primary btn-sm'],
-                ['type', 'button']
-              ],
-              null,
-              [[null, 'click']],
-              function(t, e, n) {
-                var r = !0;
-                return (
-                  'click' === e &&
-                    (r = !1 !== t.component.removeDescription() && r),
-                  r
-                );
-              },
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(),
-            o.ɵeld(
-              48,
-              0,
-              null,
-              null,
-              0,
-              'i',
-              [['class', 'fa fa-minus']],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, [' Row\n        '])),
-            (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(),
-            o.ɵeld(
-              52,
-              0,
-              null,
-              null,
-              19,
-              'div',
-              [],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(),
-            o.ɵeld(
-              54,
-              0,
-              null,
-              null,
-              16,
-              'table',
-              [['class', 'table table-borderless table-hover']],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(),
-            o.ɵeld(
-              56,
-              0,
-              null,
-              null,
-              7,
-              'thead',
-              [],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n            '])),
-            (t()(),
-            o.ɵeld(
-              58,
-              0,
-              null,
-              null,
-              4,
-              'tr',
-              [],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n              '])),
-            (t()(), o.ɵand(16777216, null, null, 1, null, h)),
-            o.ɵdid(
-              61,
-              278528,
-              null,
-              0,
-              a.NgForOf,
-              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
-              { ngForOf: [0, 'ngForOf'] },
-              null
-            ),
-            (t()(), o.ɵted(-1, null, ['\n            '])),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(),
-            o.ɵeld(
-              65,
-              0,
-              null,
-              null,
-              4,
-              'tbody',
-              [],
-              null,
-              null,
-              null,
-              null,
-              null
-            )),
-            (t()(), o.ɵted(-1, null, ['\n            '])),
-            (t()(), o.ɵand(16777216, null, null, 1, null, m)),
-            o.ɵdid(
-              68,
-              278528,
-              null,
-              0,
-              a.NgForOf,
-              [o.ViewContainerRef, o.TemplateRef, o.IterableDiffers],
-              { ngForOf: [0, 'ngForOf'] },
-              null
-            ),
-            (t()(), o.ɵted(-1, null, ['\n          '])),
-            (t()(), o.ɵted(-1, null, ['\n        '])),
-            (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(), o.ɵted(-1, null, ['\n    '])),
-            (t()(), o.ɵted(-1, null, ['\n    '])),
-            (t()(),
-            o.ɵeld(
-              74,
               0,
               null,
               null,
@@ -64768,9 +65169,9 @@
               null
             )),
             (t()(), o.ɵted(-1, null, ['\n      '])),
-            (t()(), o.ɵand(16777216, null, null, 1, null, b)),
+            (t()(), o.ɵand(16777216, null, null, 1, null, O)),
             o.ɵdid(
-              77,
+              35,
               278528,
               null,
               0,
@@ -64784,7 +65185,7 @@
             (t()(), o.ɵted(-1, null, ['\n  '])),
             (t()(),
             o.ɵeld(
-              81,
+              39,
               0,
               null,
               null,
@@ -64800,7 +65201,7 @@
             (t()(), o.ɵted(-1, null, ['\n    '])),
             (t()(),
             o.ɵeld(
-              83,
+              41,
               0,
               null,
               null,
@@ -64816,7 +65217,7 @@
             (t()(), o.ɵted(-1, null, ['\n      '])),
             (t()(),
             o.ɵeld(
-              85,
+              43,
               0,
               null,
               null,
@@ -64832,7 +65233,7 @@
             (t()(), o.ɵted(-1, null, ['\n        '])),
             (t()(),
             o.ɵeld(
-              87,
+              45,
               0,
               null,
               null,
@@ -64840,6 +65241,7 @@
               'img',
               [
                 ['alt', 'Random first slide'],
+                ['class', 'product-full-image'],
                 ['style', 'height: calc(100vh - 100px);']
               ],
               [[8, 'src', 4]],
@@ -64852,38 +65254,15 @@
             (t()(), o.ɵted(-1, null, ['\n    '])),
             (t()(), o.ɵted(-1, null, ['\n    '])),
             (t()(), o.ɵted(-1, null, ['\n  '])),
-            (t()(), o.ɵted(-1, null, ['\n'])),
             (t()(), o.ɵted(-1, null, ['\n']))
           ],
           function(t, e) {
             var n = e.component;
-            t(e, 23, 0, n.editorConfig, 'Enter text here...'),
-              t(e, 25, 0, n.currentProduct.richTextDescription),
+            t(e, 26, 0, n.onEditting),
+              t(e, 29, 0, !n.onEditting),
               t(
                 e,
-                32,
-                0,
-                null == n.currentProduct
-                  ? null
-                  : n.currentProduct.descriptionFieldList
-              ),
-              t(
-                e,
-                61,
-                0,
-                null == n.currentProduct
-                  ? null
-                  : n.currentProduct.descriptionFieldList
-              ),
-              t(
-                e,
-                68,
-                0,
-                null == n.currentProduct ? null : n.currentProduct.descriptions
-              ),
-              t(
-                e,
-                77,
+                35,
                 0,
                 null == n.currentCatalogItem
                   ? null
@@ -64894,27 +65273,14 @@
             var n = e.component;
             t(
               e,
-              22,
+              45,
               0,
-              o.ɵnov(e, 23).tabindex,
-              o.ɵnov(e, 27).ngClassUntouched,
-              o.ɵnov(e, 27).ngClassTouched,
-              o.ɵnov(e, 27).ngClassPristine,
-              o.ɵnov(e, 27).ngClassDirty,
-              o.ɵnov(e, 27).ngClassValid,
-              o.ɵnov(e, 27).ngClassInvalid,
-              o.ɵnov(e, 27).ngClassPending
-            ),
-              t(
-                e,
-                87,
-                0,
-                null == n.currentProduct ? null : n.currentProduct.image
-              );
+              null == n.currentProduct ? null : n.currentProduct.image
+            );
           }
         );
       }
-      function y(t) {
+      function P(t) {
         return o.ɵvid(
           0,
           [
@@ -64930,7 +65296,7 @@
               null,
               null,
               null,
-              v,
+              w,
               d
             )),
             o.ɵdid(
@@ -64951,12 +65317,12 @@
         );
       }
       (e.RenderType_CatalogComponent = d),
-        (e.View_CatalogComponent_0 = v),
-        (e.View_CatalogComponent_Host_0 = y),
+        (e.View_CatalogComponent_0 = w),
+        (e.View_CatalogComponent_Host_0 = P),
         (e.CatalogComponentNgFactory = o.ɵccf(
           'app-catalog',
           c.CatalogComponent,
-          y,
+          P,
           {},
           {},
           []
