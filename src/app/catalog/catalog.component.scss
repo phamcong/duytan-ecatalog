@@ -34,7 +34,7 @@
 .product-description {
   display: inline-block;
   position: absolute;
-  height: calc(100vh - 246px);
+  max-height: calc(100vh - 246px);
   overflow-y: auto;
   bottom: 160px;
   width: 100%;
@@ -49,6 +49,12 @@
 
 .product-full-image {
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.product-full-image:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
 
 .action-menu {
